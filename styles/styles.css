@@ -7,7 +7,7 @@ body {
 .noto-serif-font {
   font-family: "Noto Serif", serif;
 }
-body {
+header, .container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -183,19 +183,47 @@ nav ul li a{
 
 .content a {
   color: white;
-  border-radius: 4px;
-  text-decoration: none;
-  border-bottom: 2px solid white;
-  font-weight: bold;
 }
 
+/* Join the colorful Bunch Styles  */
 
+.subscribe-container{
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  height: px;
+}
+.subscribe-input{
+  width: 640px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.email{
+  width: 640px;
+  padding: 10px;
+}
+.submit{
+  border: none;
+  color: white;
+  width: 180px;
+  padding: 10px;
+  background-color: #E95A08;
+  cursor: pointer;
+  font-weight: 600;
+}
 
 /* Responsive For Mobile */
 
 @media screen and (max-width: 576px) {
-  body{
+  header,.container{
     padding: 0 10px;
+  }
+  h2{
+    font-size: 1.5rem;
   }
   nav img {
     width: 80px;
@@ -241,6 +269,9 @@ nav ul li a{
   height: auto;
   
 }
+.latest-deals-text-container{
+  width: 100%;
+}
 .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -254,13 +285,20 @@ nav ul li a{
   .card.large {
     grid-row: auto;
   }
+  
+  .subscribe-container{
+    margin: 0;
+  }
+  .subscribe-input{
+    width: 70%;
+  }
 
 }
 
 /* Responsive For Tablet  */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  body{
+  header, .container{
     padding: 0 10px;
   }
   .hero-container{
