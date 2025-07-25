@@ -7,3 +7,49 @@ body {
 .noto-serif-font {
   font-family: "Noto Serif", serif;
 }
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* Header Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #ddd; */
+  margin: 10px 0;
+}
+nav img {
+  width: 130px;
+  height: auto;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: gray;
+}
+.active-list {
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  body{
+    padding: 0 10px;
+  }
+  nav img {
+    width: 80px;
+  }
+  .hidden-list {
+    display: none;
+  }
+  
+}
