@@ -1,0 +1,9 @@
+/* Shared Styles  */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+}
