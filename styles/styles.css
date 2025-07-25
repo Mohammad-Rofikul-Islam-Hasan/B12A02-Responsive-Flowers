@@ -21,7 +21,7 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 } 
-p {
+p, li{
   color: gray;
 }
 /* Header Styles */
@@ -101,7 +101,29 @@ nav ul li a{
   width: 100%;
 }
 
-
+/* Flowers And Plants Lover Styles  */
+.flowers-lovers-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  gap: 40px;
+}
+.flowers-lovers-img-container{
+  position: relative;
+  /* border: 1px solid black; */
+  margin-top: 50px;
+}
+.flowers-lovers-img-container .badge{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: -110px;
+  right: -110px;
+}
+.flowers-lovers-text-container li{
+ margin-top: 20px;
+}
 
 /* Responsive For Mobile */
 
@@ -118,6 +140,7 @@ nav ul li a{
   .hero-container{
     flex-direction: column-reverse;
     align-items: center;
+    gap: 20px;
   }
   .hero-container img {
     width: 100%;
@@ -137,6 +160,22 @@ nav ul li a{
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
+.badge{
+  display: none;
+}
+
+.flowers-lovers-container{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid black; */
+} 
+.flowers-lovers-img{
+  width: 100%;
+  height: auto;
+  
+}
+
 }
 
 /* Responsive For Tablet  */
@@ -158,4 +197,9 @@ nav ul li a{
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
+.flowers-lovers-container{
+  flex-direction: column;
+  align-items: center;
 } 
+
+}
