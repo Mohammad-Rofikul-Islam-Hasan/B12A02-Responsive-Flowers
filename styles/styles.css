@@ -7,7 +7,7 @@ body {
 .noto-serif-font {
   font-family: "Noto Serif", serif;
 }
-header, .container {
+header, .container, footer {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -99,6 +99,13 @@ nav ul li a{
   border: none;
   padding: 10px 20px;
   width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+}
+.plant-card button:hover{
+  color: #E95A08;
+  border: 1px solid #E95A08;
+  background-color: white;
 }
 
 /* Flowers And Plants Lover Styles  */
@@ -215,11 +222,49 @@ nav ul li a{
   cursor: pointer;
   font-weight: 600;
 }
+.submit:hover{
+  color: #E95A08;
+  border: 1px solid #E95A08;
+  background-color: white;
+}
+footer{
+  margin-top: 50px;
+    /* border: 1px solid black; */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer-list{
+    /* border: 1px solid black; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list li{
+  list-style: none;
+}
+.footer-list li a{
+  text-decoration: none;
+  color: gray;
+}
+.footer-socials{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+}
+.footer-socials img{
+  height: 30px;
+  width: 30px;
+}
+
 
 /* Responsive For Mobile */
 
 @media screen and (max-width: 576px) {
-  header,.container{
+  header,.container, footer{
     padding: 0 10px;
   }
   h2{
@@ -292,13 +337,19 @@ nav ul li a{
   .subscribe-input{
     width: 70%;
   }
+  footer{
+    flex-direction: column;
+  }
+  .footer-socials{
+    align-items: center;
+  }
 
 }
 
 /* Responsive For Tablet  */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  header, .container{
+  header, .container, footer{
     padding: 0 10px;
   }
   .hero-container{
